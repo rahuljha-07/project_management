@@ -139,7 +139,7 @@ const HomePage = () => {
         </div>
         <div className="rounded-lg bg-white p-4 shadow dark:bg-dark-secondary md:col-span-2">
           <h3 className="mb-4 text-lg font-semibold dark:text-white">
-            Your Tasks
+            All Tasks
           </h3>
           <div style={{ height: 400, width: "100%" }}>
             <DataGrid
