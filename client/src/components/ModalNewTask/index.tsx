@@ -47,7 +47,13 @@ const ModalNewTask = ({ isOpen, onClose, id = null }: Props) => {
   };
 
   const isFormValid = () => {
-    return title && authorUserId && !(id !== null || projectId);
+    console.log("isFormValid", {
+      title,
+      authorUserId,
+      id,
+      projectId,
+    });
+    return title && authorUserId && (id !== null);
   };
 
   const selectStyles =
@@ -63,6 +69,7 @@ const ModalNewTask = ({ isOpen, onClose, id = null }: Props) => {
         onSubmit={(e) => {
           e.preventDefault();
           handleSubmit();
+          window.location.reload();
         }}
       >
         <input

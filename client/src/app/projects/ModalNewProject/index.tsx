@@ -47,6 +47,7 @@ const ModalNewProject = ({ isOpen, onClose }: Props) => {
         onSubmit={(e) => {
           e.preventDefault();
           handleSubmit();
+          window.location.reload();
         }}
       >
         <input
