@@ -28,8 +28,8 @@ import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 
 const Sidebar = () => {
-  const [showProjects, setShowProjects] = useState(true);
-  const [showPriority, setShowPriority] = useState(true);
+  const [showProjects, setShowProjects] = useState(false);
+  const [showPriority, setShowPriority] = useState(false);
 
   const { data: projects } = useGetProjectsQuery();
   const dispatch = useAppDispatch();
